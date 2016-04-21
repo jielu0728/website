@@ -1,0 +1,51 @@
+{% extends 'template.html' %}
+
+{% block title %}Nos forces{% endblock %}
+
+{% block headblock %}
+<style type="text/css">
+	div {
+    	border: 0px solid #000000;
+	}
+ 	.text {
+		width: 100%;
+		height: 840px;
+		position: relative;
+		padding-left: 15px;
+		padding-right: 100px;
+		float: left;
+		text-align: center;
+		display: table; 
+		background-color: transparent !important;
+	}
+
+	.text vtc {
+		color: white;
+		display: table-cell; 
+  		vertical-align: middle; 
+	}
+</style>
+{% endblock %}
+
+{% block content %}
+<div id="wrapper">
+	<div class="text">
+		<vtc><h3>Economisez du temps, de l’énergie et de l’argent grâce à SMLB.<br><br>
+		Nous nous appuyons sur 20 ans d’expérience logistique et des milliers de relations
+		 fournisseurs afin de proposer un service d’approvisionnement de premier choix.<br><br>
+		Nous fournissons des matériels et logiciels hors catalogue
+		 ou difficilement disponibles auprès des distributeurs traditionnels.<br><br>
+		Vous ne traitez qu’avec un seul fournisseur et avez donc le bénéfice d’une seule facturation,
+		 une seule relation commerciale à entretenir, un seul interlocuteur responsable
+		  pour vous fournir une infinité de produits et de services.<br><br>
+		Nous ajustons notre façon de faire à vos procédures et modes de fonctionnement,
+		 vous permettant ainsi de vous focaliser sur vos activités stratégiques.<br><br>
+		Achats Software et Hardware<br>
+        Concentration des Fournisseurs non stratégiques<br>
+        Sourcing ou Portage<br><br>
+		50 000 ref article créées, 7 000 fournisseurs référencés, <br>
+		CA 2014 de 16M€<br><br></h3>
+	</div>
+</div>
+
+{% endblock %}

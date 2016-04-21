@@ -1,0 +1,45 @@
+{% extends 'template.html' %}
+
+{% block title %}Vous cherchez{% endblock %}
+
+{% block headblock %}
+<style type="text/css">
+	div {
+    	border: 0px solid #000000;
+	}
+ 	.text {
+		width: 100%;
+		height: 840px;
+		position: relative;
+		padding-left: 15px;
+		padding-right: 100px;
+		float: left;
+		text-align: center;
+		display: table; 
+		background-color: transparent !important;
+	}
+
+	.text vtc {
+		color: white;
+		display: table-cell; 
+  		vertical-align: middle; 
+	}
+</style>
+{% endblock %}
+
+{% block content %}
+<div id="wrapper">
+	<div class="text">
+		<vtc><h1>SMLB, un partenaire proche de vous !</h1><br><br>
+		<h3>Ne dites plus NON à vos clients! Ouvrez votre catalogue !<br><br>
+		Trop de fournisseurs ? Pas assez de ligne de crédit ?<br><br>
+		Besoin d’acheter par carte bancaire ? Fournisseurs inaccessibles ?<br><br>
+		√ Un seul compte fournisseur à gérer<br><br>
+		√ Optimisation de vos marges et délais de livraison <br><br>
+		√ Optimisation de vos encours et reploiement des lignes de crédit<br><br>
+        √ Achat de vos produits hors catalogue<br><br>
+        Nous savons acheter tous produits hardware et logiciels mais aussi les prestations intellectuelles et contrats de maintenance.<br><br></h3>
+	</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'template.html' %}
+
+{% block title %}Externalisation{% endblock %}
+
+{% block headblock %}
+<style type="text/css">
+	div {
+    	border: 0px solid #000000;
+	}
+ 	.text {
+		width: 100%;
+		height: 840px;
+		position: relative;
+		padding-left: 15px;
+		padding-right: 100px;
+		float: left;
+		text-align: center;
+		display: table; 
+		background-color: transparent !important;
+	}
+
+	.text vtc {
+		color: white;
+		display: table-cell; 
+  		vertical-align: middle; 
+	}
+</style>
+{% endblock %}
+
+{% block content %}
+<div id="wrapper">
+	<div class="text">
+		<vtc><h1>Qu’est-ce que cela vous apporte concrètement de travailler avec SMLB?</h1><br><br><br>
+		<h3>Un seul point d’entrée capable de sourcer vos produits ou de « porter » vos commandes<br><br>
+		Des économies d’échelle, de temps et d’argent en réduisant vos coûts administratifs<br><br>
+		La concentration en un seul endroit des encours pour vos fournisseurs non stratégiques<br><br>
+		Des conditions de paiement unifiées et une procédure logistique et comptable validée<br><br>
+		Vous décharger du risque associé à l’approvisionnement des produits exotiques<br><br>
+		Des prix stabilisés par rapport aux variations des devises<br><br>
+		Votre équipe commerciale peut se consacrer à la croissance de vos activités stratégiques<br><br>
+		Notre équipe vous permet d’étendre votre offre produits sans coûts supplémentaires<br><br>
+		Vous profitez d’une offre d’approvisionnement sans soucis<br><br></h3>
+	</div>
+</div>
+{% endblock %}

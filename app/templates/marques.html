@@ -1,0 +1,133 @@
+{% extends 'template.html' %}
+{% load static from staticfiles %}
+
+{% block title %}Marques/Editeurs{% endblock %}
+
+{% block headblock %}
+<style type="text/css">
+	div {
+    	border: 0px solid #000000;
+    	background-color: transparent !important;
+	}
+	.text {
+		padding: 15px 20px;
+		text-align: center;
+		color: white;
+	}
+	.unit {
+		padding: 15px 20px;
+		border: 0;
+		color: white;
+	}
+	.unit a{
+		color: #4BCEFA;
+	}
+	.image {
+		width: 50%;
+		height: 110px;
+		position: relative;
+		padding-left: 15px;
+		padding-right: 15px;
+		float: left;
+		display: table; 
+	}
+
+	.image vtc {
+		display: table-cell; 
+  		vertical-align: middle; 
+	}
+
+	.link {
+		width: 50%;
+		height: 110px;
+		position: relative;
+		padding-left: 15px;
+		padding-right: 15px;
+		float: left;
+		text-align: left;
+		display: table; 
+	}
+
+	.link vtc {
+		display: table-cell; 
+  		vertical-align: middle; 
+	}
+
+	.middle {
+		position: relative;
+		min-height: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+		text-align: center;
+		float: left;
+		width: 100%;
+		background: #FFFFFF;
+	}
+	.marques{
+		padding-bottom: 30px;
+		height: 600px;
+	}
+	.headerimg{
+		padding-bottom: 30px;
+		padding-top: 30px;
+	}
+	.half{
+		width: 50%;
+		float: left;
+	}
+</style>
+
+{% endblock %}
+
+{% block content %}
+<div id="wrapper">
+	<div class="container-fluid">
+		<div class="row">
+		    <div class="middle">
+		    	<div class="text">
+			    	<strong><h2>LISTE EDITEUR SMLB 2015<br><br></h2></strong>
+		    	</div>
+		    	<div class="marques">
+		    		<div class="half">
+				    	{% for marque in marques.0 %}
+					      	<div class="unit">
+						      	<div class="image">
+						      		<vtc><a href="http://{{marque.web}}" target="_blank"><img src="{% static marque.imgpath %}" height="50" width="140"></a></vtc>
+						      	</div>
+						      	<div class="link">
+						      		<vtc><p class="text-info"><strong><h4>{{marque.name}}</h4></strong></p>
+						      		<a href="http://{{marque.web}}" target="_blank">{{marque.web}}</a></vtc>
+						      	</div>
+							</div>
+						{% endfor %}
+					</div>
+					<div class="half">
+						{% for marque in marques.1 %}
+					      	<div class="unit">
+						      	<div class="image">
+						      		<vtc><a href="http://{{marque.web}}" target="_blank"><img src="{% static marque.imgpath %}" height="50" width="140"></a></vtc>
+						      	</div>
+						      	<div class="link">
+						      		<vtc><p class="text-info"><strong><h4>{{marque.name}}</h4></strong></p>
+						      		<a href="http://{{marque.web}}" target="_blank">{{marque.web}}</a></vtc>
+						      	</div>
+							</div>
+						{% endfor %}
+					</div>
+					
+				</div>
+				<ul class="pagination">
+						<li><a href="/marques">&laquo;</a></li>
+						<li><a href="/marques">1</a></li>
+						{% for i in total %}
+							<li><a href="{{i}}">{{i}}</a></li>
+						{% endfor %}
+						<li><a href="{{total|last}}">&raquo;</a></li>
+				</ul>
+		    </div>
+	  	</div>
+
+	</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'template.html' %}
+
+{% block title %}Qui sommes nous{% endblock %}
+ 
+{% block headblock %}
+<style type="text/css">
+	div {
+    	border: 0px solid #000000;
+	}
+ 	.text {
+		width: 100%;
+		height: 840px;
+		position: relative;
+		padding-left: 15px;
+		padding-right: 100px;
+		float: left;
+		text-align: center;
+		display: table; 
+		background-color: transparent !important;
+	}
+
+	.text vtc {
+		color: white;
+		display: table-cell; 
+  		vertical-align: middle; 
+	}
+</style>
+{% endblock %}
+
+{% block content %}
+<div id="wrapper">
+	<div class="text">
+		<vtc><h1>Société de Services en Achats Informatiques</h1><br><br><br>
+		<h3>Smlb est spécialisée depuis 20 ans dans les services liés aux achats IT.<br><br>
+		Notre présence à l’international nous permet d’identifier les partenaires les plus fiables et 
+		de disposer d’une visibilité immédiate et permanente sur leurs stocks.<br><br>
+		Entreprise à taille humaine, nous adressons les corporate resellers, les intégrateurs et les sociétés de services.<br><br>
+		Le temps, le contrôle de la marge, la trésorerie, les délais, la performance,
+		 la polyvalence, l’exigence des clients finaux... sont nos préoccupations de chaque instant.<br><br>
+		Notre objectif : <br><br>
+		Vous rendre plus efficace en vous libérant de la gestion des fournisseurs non stratégiques<br><br>
+		Nous connaissons vos contraintes et nous vous accompagnons au quotidien !<br><br></h3>
+	</div>
+</div>
+{% endblock %}
