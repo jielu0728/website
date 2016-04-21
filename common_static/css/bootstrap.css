@@ -4314,7 +4314,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 9px 10px;
   margin-top: 8px;
   margin-bottom: 8px;
-  background-color: transparent;
+  background-color: gray;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -4327,6 +4327,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   width: 22px;
   height: 2px;
   border-radius: 1px;
+  background-color: white;
 }
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
